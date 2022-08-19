@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.software.com</groupId>
-    <artifactId>Restful_CRUD</artifactId>
+    <artifactId>MovieApiRest-CRUD</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>Restful CRUD</name>
-    <description>Restful CRUD</description>
+    <description>MovieApiRest</description>
     <properties>
         <java.version>18</java.version>
     </properties>
