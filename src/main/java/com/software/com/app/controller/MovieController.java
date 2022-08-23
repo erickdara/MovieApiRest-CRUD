@@ -32,7 +32,7 @@ public class MovieController {
     @GetMapping(value = "/movies")
     @ResponseBody
     public ResponseEntity<List<Movie>> getAlphabeticalOrderedList(@RequestParam int total, @RequestParam String order) {
-        Pageable paging = PageRequest.of(0, total, Sort.by(Sort.Direction.fromString(order)));
+        Pageable paging = PageRequest.of(0, total, Sort.by(Sort.Direction.fromString(order),"film"));
         Page<Movie> page = movieRepository.findAll(paging);
         return ResponseEntity.ok().body(page.getContent());
     }
